@@ -303,6 +303,17 @@ if MySys() == "mac"
   vmap <D-k> <M-k>
 endif
 
+"Delete trailing white space
+func! DeleteTrailingWS()
+  exe "normal mz"
+  %s/\s\+$//ge
+  exe "normal `z"
+endfunc
+autocmd BufWrite *.rb :call DeleteTrailingWS()
+autocmd BufWrite *.haml :call DeleteTrailingWS()
+autocmd BufWrite *.erb :call DeleteTrailingWS()
+
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 

@@ -1,3 +1,9 @@
+== Intro
+
+The vimfiles are based on 
+
+* http://amix.dk/vim/vimrc.html
+* http://github.com/scrooloose/vimfiles
 
 == Used Plugins
 
