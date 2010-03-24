@@ -314,6 +314,11 @@ autocmd BufWrite *.haml :call DeleteTrailingWS()
 autocmd BufWrite *.erb :call DeleteTrailingWS()
 
 
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" When vimrc is edited, reload it
+autocmd! bufwritepost vimrc source ~/.vim/vimrc
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
