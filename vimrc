@@ -215,7 +215,7 @@ set hidden
 
 "dont load csapprox if we no gui support - silences an annoying warning
 if !has("gui")
-    let g:CSApprox_loaded = 1
+    let g:CSApprox_loaded = 3
 endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -254,6 +254,19 @@ catch
 endtry
 
 set ffs=unix,dos,mac "Default file types
+
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Moving around, tabs and buffers
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Smart way to move btw. windows
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
+
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
