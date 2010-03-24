@@ -218,6 +218,46 @@ if !has("gui")
     let g:CSApprox_loaded = 1
 endif
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Colors and Fonts
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+syntax enable "Enable syntax hl
+
+" Set font according to system
+if MySys() == "mac"
+  set gfn=Bitstream\ Vera\ Sans\ Mono:h14
+  set shell=/bin/bash
+elseif MySys() == "windows"
+  set gfn=Bitstream\ Vera\ Sans\ Mono:h10
+elseif MySys() == "linux"
+  set gfn=Monospace\ 10
+  set shell=/bin/bash
+endif
+
+if has("gui_running")
+  set guioptions-=T
+  set t_Co=256
+  set background=dark
+  "colorscheme peaksea
+  colorscheme desert
+  set nu
+else
+  colorscheme zellner
+  set background=dark
+  set nonu
+endif
+
+set encoding=utf8
+try
+    lang en_US
+catch
+endtry
+
+set ffs=unix,dos,mac "Default file types
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
 "make <c-l> clear the highlight as well as redraw
 nnoremap <C-L> :nohls<CR><C-L>
 inoremap <C-L> <C-O>:nohls<CR>
