@@ -16,8 +16,11 @@ git submodule init
 git submodule update
 </code></pre>
 
-Put this in your vimrc along with your personal hacks:
-<pre><code>
-source ~/.vim/vimrc      "linux
-source ~/vimfiles/vimrc  "windows
+Put this in your  .vimrc: 
+
+fun! MySys()
+  return "mac"
+endfun
+
+source ~/.vim/vimrc
 </code></pre>
