@@ -386,3 +386,8 @@ function! s:HighlightLongLines(width)
         echomsg "Usage: HighlightLongLines [natural number]"
     endif
 endfunction
+
+
+"hide line numbers
+set nonumber
+
