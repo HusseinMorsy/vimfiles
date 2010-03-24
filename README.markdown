@@ -1,4 +1,10 @@
-h1. Usage
+
+== Used Plugins
+
+* complete-T (see http://www.vim.org/scripts/script.php?script_id=3025 und screencast http://s3.wincent.com/command-t/screencasts/command-t-preview.mov)
+* ...
+
+== Installatoin
 
 Clone this repo into your home directory either as .vim (linux) or vimfiles (MF
 Windows).
