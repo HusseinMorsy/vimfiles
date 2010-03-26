@@ -9,6 +9,7 @@ The vimfiles are based on
 
 * vim-fugitive - a Git client (see http://github.com/tpope/vim-fugitive)
 * complete-T (see http://www.vim.org/scripts/script.php?script_id=3025 und screencast http://s3.wincent.com/command-t/screencasts/command-t-preview.mov)
+* colortheme  vividchalk (see http://github.com/tpope/vim-vividchalk)
 * ...
 
 == Installatoin

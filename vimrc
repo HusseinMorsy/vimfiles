@@ -211,7 +211,7 @@ set ttymouse=xterm2
 set t_Co=256
 
 "set colorscheme
-colorscheme desert
+colorscheme vividchalk
 
 "hide buffers when not displayed
 set hidden
@@ -242,10 +242,11 @@ if has("gui_running")
   set t_Co=256
   set background=dark
   "colorscheme peaksea
-  colorscheme desert
+  colorscheme  vividchalk
   set nu
 else
-  colorscheme zellner
+  "colorscheme zellner
+  set colorscheme=vividchalk
   set background=dark
   set nonu
 endif
