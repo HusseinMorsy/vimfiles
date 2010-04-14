@@ -1,4 +1,4 @@
-"Use Vim settings, rather then Vi settings (much better!).
+
 "This must be first, because it changes other options as a side effect.
 set nocompatible
 
@@ -329,13 +329,19 @@ nmap <D-6> 6gt
 nmap <D-7> 7gt
 nmap <D-8> 8gt
 nmap <D-9> 9gt
+nmap <D-0> :tablast<CR>
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " When vimrc is edited, reload it
 autocmd! bufwritepost vimrc source ~/.vim/vimrc
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
+" tags
+" Generate tags file in your project with:
+" ctags -R --exclude=log --exclude=.git *
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set tags=./tags
 
 "make <c-l> clear the highlight as well as redraw
 nnoremap <C-L> :nohls<CR><C-L>
